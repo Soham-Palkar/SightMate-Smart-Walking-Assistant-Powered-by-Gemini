@@ -1,0 +1,9 @@
+{
+  "name": "SightMate Pro",
+  "description": "Advanced visual assistant for the visually impaired using Gemini 2.5 Flash for real-time scene description, OCR, and safety analysis.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}

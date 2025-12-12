@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>SightMate Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+      /* Friendly Focus Outline */
+      *:focus-visible {
+        outline: 4px solid #818cf8; /* Soft Indigo */
+        outline-offset: 2px;
+      }
+      body {
+        /* Soft Lavender/Teal Gradient */
+        background: linear-gradient(135deg, #f0f9ff 0%, #e0e7ff 100%);
+        color: #1e293b; /* Dark Navy for contrast */
+        overscroll-behavior: none;
+        font-family: 'Nunito', sans-serif;
+      }
+      
+      /* Ripple Animation */
+      @keyframes ripple {
+        0% { transform: scale(1); opacity: 0.6; }
+        100% { transform: scale(1.5); opacity: 0; }
+      }
+      .animate-ripple {
+        animation: ripple 2s infinite cubic-bezier(0, 0, 0.2, 1);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.32.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
